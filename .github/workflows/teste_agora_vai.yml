@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Checkmarx One CLI Action
-        uses: checkmarx/ast-github-action@main #Github Action version
+        uses: https://github.com/Nova-8/Damm-Vulnerable-PHP-Application #Github Action version
         with:
           project_name: teste_github_giu
           cx_tenant: beta_nova8
