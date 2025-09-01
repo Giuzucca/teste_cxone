@@ -13,7 +13,7 @@ jobs:
       - name: Checkmarx One CLI Action
         uses: checkmarx/ast-github-action@main #Github Action version
         with:
-          project_name: teste_github_giu
+          project_name: ${{ Nova-8/Damm-Vulnerable-PHP-Application }}
           cx_tenant: beta_nova8
           base_uri: https://eu.iam.checkmarx.net
           cx_client_id: ${{ secrets.CX_TEST_GITHUB }}
