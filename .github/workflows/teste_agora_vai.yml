@@ -1,15 +1,16 @@
 name: Checkmarx One Scan
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: Baixar repositório público
+        run: |
+          git clone https://github.com/Nova-8/Damm-Vulnerable-PHP-Application.git target-repo
+          cd target-repo
+          
       - name: Checkmarx One CLI Action
         uses: checkmarx/ast-github-action@main #Github Action version
         with:
