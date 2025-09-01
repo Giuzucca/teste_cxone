@@ -12,7 +12,7 @@ jobs:
           cd target-repo
           
       - name: Checkmarx One CLI Action
-        uses: checkmarx/ast-github-action@main #Github Action version
+        uses: github.com/Nova-8/Damm-Vulnerable-PHP-Application #Github Action version
         with:
           project_name: teste_github_giu
           cx_tenant: beta_nova8
